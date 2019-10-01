@@ -69,7 +69,7 @@ detailFavorites.passingInfo = favoriteImages[indexPath.row]
     }
     func loadData() {
         do { favoriteImages = try ImagePersistenceHelper.manager.getSloths()
-            
+            favoriteTableView.reloadData()
         } catch let error {
         print(error)
         }

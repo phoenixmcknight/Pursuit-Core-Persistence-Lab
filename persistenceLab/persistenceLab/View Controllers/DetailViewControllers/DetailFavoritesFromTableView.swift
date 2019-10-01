@@ -28,11 +28,11 @@ class DetailFavoriteViewController:UIViewController {
         setUP()
     }
     func setUP() {
-        favoriteLabel.text = passingInfo.favorites == nil ? "Favorite Data is not available" : "Favorites : \(String(describing: passingInfo.favorites!)))"
+        favoriteLabel.text = passingInfo.favorites == nil ? "Favorite Data is not available" : "Favorites : \(String(describing: passingInfo.favorites!))"
         
-        tagLabel.text = passingInfo.tags == nil ? "Tag Data is not available" : "Tags: \(String(describing: passingInfo.tags!)))"
+        tagLabel.text = passingInfo.tags == nil ? "Tag Data is not available" : "Tags: \(String(describing: passingInfo.tags!))"
         
-        likeLabel.text = passingInfo.likes == nil ? "Tag Data is not available" : "Tags: \(String(describing: passingInfo.likes!)))"
+        likeLabel.text = passingInfo.likes == nil ? "Tag Data is not available" : "Tags: \(String(describing: passingInfo.likes!))"
         
         if let image = passingInfo.imageURL {
             ImageHelper.shared.getImage(urlStr: image) {
